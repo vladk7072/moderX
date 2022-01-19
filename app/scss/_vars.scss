@@ -1,0 +1,17 @@
+// $var1: #ffffff;
+// $var2: #585858;
+// $var3: #bfbfbf;
+// $var4: #838383;
+// $var5: #000000;
+// $var6: #888888;
+// $var7: #A9A9A9;
+// $var8: #464646;
+// $var9: #686868;
+// $var10: #444444;
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

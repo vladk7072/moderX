@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+<title>Moder | Catalog</title>
+<link href="css/style.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<!-- site BEGIN -->
+<div id="site">
+  <div id="site-wrapper">
+    <!-- header BEGIN -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="logo header__logo">
+          <img src="./images/logo.svg" class="logo__img" alt="Moder">
+        </a>
+        <div class="header__dropdown">
+          <nav class="nav header__nav" role="navigation">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Магазины</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Ателье</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Сотрудничество</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btn-actions-group header__actions">
+            <a href="#" class="btn-action btn-action--basket btn-actions-group__btn">
+              <svg class="btn-action__icon">
+                <use xlink:href="./images/sprite.svg#basket"></use>
+              </svg>
+            </a>
+            <a href="#" class="btn-action btn-action--favorite btn-actions-group__btn">
+              <svg class="btn-action__icon">
+                <use xlink:href="./images/sprite.svg#favorite"></use>
+              </svg>
+            </a>
+            <a href="#" class="btn-action btn-action--search btn-actions-group__btn">
+              <svg class="btn-action__icon">
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="tel:+88004446016" class="phone-link header__phone-link">8 (800) 444-60-16</a>
+        </div>
+        <button type="button" class="js-header-dropdown-toggle toggle header__toggle">
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+        </button>
+      </div>
+    </header>
+    <!-- header END -->
+    <!-- action-mobile BEGIN -->
+    <div class="action-mobile">
+      <a href="#" class="btn-action btn-action--phone action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#favorite"></use>
+        </svg>
+      </a>
+      <a href="#" class="btn-action btn-action--favorite action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#favorite"></use>
+        </svg>
+      </a>
+      <a href="#" class="btn-action btn-action--basket action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#basket"></use>
+        </svg>
+      </a>
+      <a href="#" class="btn-action btn-action--user action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#favorite"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- action-mobile END -->
+    <!-- layout BEGIN -->
+    <div class="layout">
+      <div class="container layout__container">
+        <div class="layout__header">
+          <ul class="breadcrumbs layout__header-breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="#"><span itemprop="name">Каталог</span></a><meta itemprop="position" content="0">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="#"><span itemprop="name">Все товары</span></a><meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="#"><span itemprop="name">Поло и утболки</span></a><meta itemprop="position" content="2">
+            </li>
+            <li><span>Поло с коротким рукавом</span></li>
+          </ul>
+          <div class="js-filter-toggle filter layout__header-filter">
+            <button type="button" class="filter__button">
+              <div class="filter__button-title">Сортировать:</div>
+              <div class="filter__button-current">по популярности</div>
+            </button>
+            <div class="filter__dropdown">
+              <div class="js-filter-item filter__dropdown-item is-active">по популярности</div>
+              <div class="js-filter-item filter__dropdown-item">по возрастанию цены</div>
+              <div class="js-filter-item filter__dropdown-item">по убыванию цены</div>
+              <div class="js-filter-item filter__dropdown-item">распродажа</div>
+            </div>
+          </div>
+        </div>
+        <div class="layout__body">
+          <div class="layout__body-aside">
+            <ul class="aside-nav layout__body-nav">
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Костюмы</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Рубашки</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Брюки</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Пиджаки</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Жилеты</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Верхняя одежда</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link is-active">Поло и рутболки</a>
+                <ul class="aside-nav">
+                  <li class="aside-nav__item">
+                    <a href="#" class="aside-nav__link">Поло с длинным руковом</a>
+                  </li>
+                  <li class="aside-nav__item">
+                    <a href="#" class="aside-nav__link is-active">Поло с коротким рукавом</a>
+                  </li>
+                  <li class="aside-nav__item">
+                    <a href="#" class="aside-nav__link">Футболки</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Трикотаж</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Аксессуары</a>
+              </li>
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">Шорты</a>
+              </li>
+            </ul>
+            <div class="slider-price layout__body-slider-price">
+              <div class="slider-price__header">
+                Цена от <input type="text" name="" class="js-slider-range-catalog-price-min slider-price__input" value="1 550"> до <input type="text" name="" class="js-slider-range-catalog-price-max slider-price__input" value="5 690">
+              </div>
+              <div class="slider-price__el">
+                <input type="text" class="js-slider-range-catalog-price-init" name="" value="">
+              </div>
+            </div>
+            <div class="type-filter layout__body-type-filter">
+              <div class="type-filter__header">
+                Размер <svg class="type-filter__header-arrow"><use xlink:href="./images/sprite.svg#arrow-down"></use></svg>
+              </div>
+              <div class="type-filter__dropdown"></div>
+            </div>
+            <div class="type-filter layout__body-type-filter">
+              <div class="type-filter__header">
+                Рост <svg class="type-filter__header-arrow"><use xlink:href="./images/sprite.svg#arrow-down"></use></svg>
+              </div>
+              <div class="type-filter__dropdown"></div>
+            </div>
+            <div class="type-filter-choose layout__body-type-filter-choose">
+              <div class="type-filter-choose__title">Цвет:</div>
+              <div class="choose-item type-filter-choose__item">
+                <div class="choose-item__title">серый</div>
+                <svg class="choose-item__remove"><use xlink:href="./images/sprite.svg#close"></use></svg>
+              </div>
+            </div>
+            <div class="type-filter layout__body-type-filter">
+              <div class="type-filter__header">
+                Силуэт <svg class="type-filter__header-arrow"><use xlink:href="./images/sprite.svg#arrow-down"></use></svg>
+              </div>
+              <div class="type-filter__dropdown"></div>
+            </div>
+            <div class="layout__body-checkboxes">
+              <div class="filter-checkbox-list">
+                <label class="form-checkbox filter-checkbox-list__item">
+                  <input type="checkbox" class="form-checkbox__input" checked value="В офис">
+                  <span class="form-checkbox__text">В офис</span>
+                  <span class="form-checkbox__icon"></span>
+                </label>
+                <label class="form-checkbox filter-checkbox-list__item">
+                  <input type="checkbox" class="form-checkbox__input" value="На свадьбу">
+                  <span class="form-checkbox__text">На свадьбу</span>
+                  <span class="form-checkbox__icon"></span>
+                </label>
+                <label class="form-checkbox filter-checkbox-list__item">
+                  <input type="checkbox" class="form-checkbox__input" value="Повседневный">
+                  <span class="form-checkbox__text">Повседневный</span>
+                  <span class="form-checkbox__icon"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="layout__body-main">
+            <div class="goods-list">
+              <div class="row goods-list__row">
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-1.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">2 000 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-2.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                        <div class="price-good price-good--old price-list__price-item">6 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-1.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">2 220 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-2.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-1.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                        <div class="price-good price-good--old price-list__price-item">5 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-2.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-12 goods-list__col">
+                  <div class="goods-card goods-card--full goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-3.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-2.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-1.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+                <div class="col-4 goods-list__col">
+                  <div class="goods-card goods-list__card">
+                    <div class="goods-card__header">
+                      <div class="goods-card__picture">
+                        <img src="./images/goods-card-2.jpg" alt="" class="img-cover">
+                      </div>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3 class="goods-card__name">
+                      <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                    </h3>
+                    <div class="price-list goods-card__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                        <div class="price-good price-good--old price-list__price-item">5 550 ₽</div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--theme-simple btn--size-md goods-card__btn">Записаться на примерку</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="js-load-moore-goods-list load-moore-btn layout__body-load-moore">
+              <span class="load-moore-btn__title">Загрузить ещё</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- layout END -->
+    <!-- footer BEGIN -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__col footer__col--contacts">
+          <div class="footer__contacts">г. Ростов-на-Дону<br>Ул. Темерницкая, 80<br><a href="tel:+88004446016">8 (800) 444-60-16</a></div>
+        </div>
+        <div class="footer__col footer__col--nav">
+          <ul class="footer-nav-list footer__nav">
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Компания</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Ателье</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">ОПТ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--nav">
+          <ul class="footer-nav-list footer__nav">
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Покупателям</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Магазины</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--subscribe">
+          <form action="#" class="subscribe-form footer__subscribe-form">
+            <div class="title-size-4 subscribe-form__title">Подписаться на рассылку</div>
+            <div class="subscribe-form__group">
+              <input type="text" name="subscribe" class="input-form subscribe-form__input" value="">
+              <input type="submit" class="btn subscribe-form__btn" value="Подписаться">
+            </div>
+          </form>
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-instagram.png">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-vk.png">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-facebook.png">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-ok.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer END -->
+  </div>
+</div>
+<!-- site END -->
+
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+<title>Moder | Card</title>
+<link href="css/style.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<!-- modal BEGIN -->
+<div id="modal-1" class="is-hidden modal modal--size-md">
+  <div class="modal__inner">
+    <div class="modal-card">
+      <div class="modal-card__picture">
+        <img src="./images/gallery-photo-card-1.jpg" class="img-cover">
+      </div>
+      <div class="modal-card__content">
+        <form action="#" class="form-buy modal-card__form">
+          <div class="form-buy__body">
+            <div class="title title-size-4 form-buy__title">запись на примерку</div>
+            <label class="label-el form-buy__label">
+              <span class="label-el__title">Ваше имя:</span>
+              <input type="text" name="name" class="input-form label-el__input" value="">
+            </label>
+            <label class="label-el form-buy__label">
+              <span class="label-el__title">Телефон:</span>
+              <input type="text" name="phone" class="input-form label-el__input" required value="">
+            </label>
+            <label class="form-checkbox form-checkbox--position-icon-left form-buy__privacy">
+              <input type="checkbox" class="form-checkbox__input" checked value="">
+              <span class="form-checkbox__text">Вы согласны с Политикой конфиденциальности в соответствии с федеральным законом от 27.07.2006 года №152-РЗ «О персональных данных», на условиях и для целей, определенных в <a href="#">Согласии на обработку персональных данных</a>.</span>
+              <span class="form-checkbox__icon"></span>
+            </label>
+          </div>
+          <input type="submit" class="btn btn--theme-gray btn--size-md form-buy__btn" value="Записаться">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-2" class="is-hidden modal modal--size-md">
+  <div class="modal__inner">
+    <div class="modal-card">
+      <div class="modal-card__picture">
+        <img src="./images/gallery-photo-card-1.jpg" class="img-cover">
+      </div>
+      <div class="modal-card__content">
+        <div class="title title-size-4 modal-card__title">ваш товар отложен</div>
+        <p class="modal-card__paragraph">Ул. Пойменная, 1, ТРК “МЕГАМАГ”, 2 этаж</p>
+        <p class="modal-card__name">Рубашка в тонкую полоску из мягкого хлопка</p>
+        <div class="modal-card__price">
+          <div class="price-good price-good--new">3 550 ₽</div>
+        </div>
+        <p class="modal-card__size">Размер 152/176</p>
+        <div class="title title-size-4 modal-card__title">мы вам перезвоним через 5 минут</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-3" class="is-hidden modal modal--size-md">
+  <div class="modal__inner">
+    <div class="modal-card">
+      <div class="modal-card__picture">
+        <img src="./images/gallery-photo-card-1.jpg" class="img-cover">
+      </div>
+      <div class="modal-card__content">
+        <p class="modal-card__name">Рубашка в тонкую полоску из мягкого хлопка</p>
+        <div class="modal-card__price">
+          <div class="price-good price-good--new">3 550 ₽</div>
+        </div>
+        <div class="modal-card__product-added">Товар добавлен в корзину</div>
+        <div class="modal-card__group">
+          <div class="modal-card__group-size">Размер 152/176</div>
+          <div class="counter-product modal-card__group-counter-product">
+            <button type="button" class="js-counter-product-plus counter-product__button counter-product__button--plus"></button>
+            <button type="button" class="js-counter-product-minus counter-product__button counter-product__button--minus"></button>
+            <input type="text" name="counter-product" class="counter-product__input" value="1">
+          </div>
+        </div>
+        <a href="#" class="btn btn--theme-gray btn--size-md modal-card__btn">Продолжить покупки</a>
+        <a href="#" class="btn btn--theme-simple btn--size-md modal-card__btn">Оформить заказ</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-4" class="is-hidden modal modal--size-md">
+  <div class="modal__inner">
+    <div class="modal-card">
+      <div class="modal-card__picture">
+        <img src="./images/gallery-photo-card-1.jpg" class="img-cover">
+      </div>
+      <div class="modal-card__content">
+        <p class="modal-card__name">Рубашка в тонкую полоску из мягкого хлопка</p>
+        <div class="modal-card__price">
+          <div class="price-good price-good--new">3 550 ₽</div>
+        </div>
+        <div class="modal-card__group">
+          <div class="modal-card__group-size">Размер 152/176</div>
+          <div class="counter-product modal-card__group-counter-product">
+            <button type="button" class="js-counter-product-plus counter-product__button counter-product__button--plus"></button>
+            <button type="button" class="js-counter-product-minus counter-product__button counter-product__button--minus"></button>
+            <input type="text" name="counter-product" class="counter-product__input" value="1">
+          </div>
+        </div>
+        <a href="#" class="btn btn--theme-gray btn--size-md modal-card__btn">Записаться на примерку</a>
+        <a href="#" class="btn btn--theme-simple btn--size-md modal-card__btn">В корзину</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal END -->
+
+<!-- site BEGIN -->
+<div id="site">
+  <div id="site-wrapper">
+    <!-- header BEGIN -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="logo header__logo">
+          <img src="./images/logo.svg" class="logo__img" alt="Moder">
+        </a>
+        <div class="header__dropdown">
+          <nav class="nav header__nav" role="navigation">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Магазины</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Ателье</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Сотрудничество</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btn-actions-group header__actions">
+            <a href="#" class="btn-action btn-action--basket btn-actions-group__btn">
+              <svg class="btn-action__icon">
+                <use xlink:href="./images/sprite.svg#basket"></use>
+              </svg>
+            </a>
+            <a href="#" class="btn-action btn-action--favorite btn-actions-group__btn">
+              <svg class="btn-action__icon">
+                <use xlink:href="./images/sprite.svg#favorite"></use>
+              </svg>
+            </a>
+            <a href="#" class="btn-action btn-action--search btn-actions-group__btn">
+              <svg class="btn-action__icon">
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="tel:+88004446016" class="phone-link header__phone-link">8 (800) 444-60-16</a>
+        </div>
+        <button type="button" class="js-header-dropdown-toggle toggle header__toggle">
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+        </button>
+      </div>
+    </header>
+    <!-- header END -->
+    <!-- action-mobile BEGIN -->
+    <div class="action-mobile">
+      <a href="#" class="btn-action btn-action--phone action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#favorite"></use>
+        </svg>
+      </a>
+      <a href="#" class="btn-action btn-action--favorite action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#favorite"></use>
+        </svg>
+      </a>
+      <a href="#" class="btn-action btn-action--basket action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#basket"></use>
+        </svg>
+      </a>
+      <a href="#" class="btn-action btn-action--user action-mobile__btn">
+        <svg class="btn-action__icon">
+          <use xlink:href="./images/sprite.svg#favorite"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- action-mobile END -->
+    <!-- layout BEGIN -->
+    <div class="layout">
+      <div class="container layout__container">
+        <div class="layout__header">
+          <ul class="breadcrumbs layout__header-breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="#"><span itemprop="name">Каталог</span></a><meta itemprop="position" content="0">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="#"><span itemprop="name">Все товары</span></a><meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="#"><span itemprop="name">Рубашки</span></a><meta itemprop="position" content="2">
+            </li>
+            <li><span>Длинный рукав</span></li>
+          </ul>
+        </div>
+        <div class="layout__body">
+          <div class="layout__body-aside">
+            <ul class="aside-nav layout__body-nav">
+              <li class="aside-nav__item">
+                <a href="#" class="aside-nav__link">< Назад в каталог</a>
+              </li>
+            </ul>
+          </div>
+          <div class="layout__body-main">
+            <div class="card-good">
+              <div class="card-good__layout">
+                <div class="gallery-photo card-good__gallery">
+                  <div class="gallery-photo__row">
+                    <div class="gallery-photo__col gallery-photo__col--100">
+                      <div class="gallery-photo-card gallery-photo__card">
+                        <div class="gallery-photo-card__picture">
+                          <img src="./images/gallery-photo-card-1.jpg" class="img-cover">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gallery-photo__col gallery-photo__col--50">
+                      <div class="gallery-photo-card gallery-photo-card--size-small gallery-photo__card">
+                        <div class="gallery-photo-card__picture">
+                          <img src="./images/gallery-photo-card-2.jpg" class="img-cover">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gallery-photo__col gallery-photo__col--50">
+                      <div class="gallery-photo-card gallery-photo-card--size-small gallery-photo__card">
+                        <div class="gallery-photo-card__picture">
+                          <img src="./images/gallery-photo-card-3.jpg" class="img-cover">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gallery-photo__col gallery-photo__col--100">
+                      <div class="gallery-photo-card gallery-photo__card">
+                        <div class="gallery-photo-card__picture">
+                          <img src="./images/gallery-photo-card-4.jpg" class="img-cover">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gallery-photo__col gallery-photo__col--50">
+                      <div class="gallery-photo-card gallery-photo-card--size-small gallery-photo__card">
+                        <div class="gallery-photo-card__picture">
+                          <img src="./images/gallery-photo-card-5.jpg" class="img-cover">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gallery-photo__col gallery-photo__col--50">
+                      <div class="gallery-photo-card gallery-photo-card--size-small gallery-photo__card">
+                        <div class="gallery-photo-card__picture">
+                          <img src="./images/gallery-photo-card-6.jpg" class="img-cover">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-good__content">
+                  <div class="card-good__content-inner">
+                    <div class="card-good__content-header">
+                      <h1 class="card-good__title">Рубашка в тонкую полоску из&nbsp;мягкого хлопка</h1>
+                      <button type="button" class="js-goods-card-favorite-toggle favorite-btn card-good__favorite">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="card-good__article">Артикул: 2102090127</div>
+                    <div class="price-list card-good__price">
+                      <div class="price-list__row">
+                        <div class="price-good price-good--new price-list__price-item">3 550 ₽</div>
+                        <div class="price-good price-good--old price-list__price-item">4 550 ₽</div>
+                      </div>
+                    </div>
+                    <div class="card-good__subtitle">Размер</div>
+                    <div class="form-radio-list card-good__form-radio-list">
+                      <div class="form-radio-list__row">
+                        <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-size" class="form-radio__input" value="152">
+                            <span class="form-radio__text">152</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                          <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-size" class="form-radio__input" checked value="152">
+                            <span class="form-radio__text">152</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                          <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-size" class="form-radio__input" value="152">
+                            <span class="form-radio__text">152</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                          <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-size" class="form-radio__input" value="152">
+                            <span class="form-radio__text">152</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                          <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-size" class="form-radio__input" value="152">
+                            <span class="form-radio__text">152</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                          <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-size" class="form-radio__input" checked value="152">
+                            <span class="form-radio__text">152</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                          <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-size" class="form-radio__input" value="152">
+                            <span class="form-radio__text">152</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-good__subtitle">Рост</div>
+                    <div class="form-radio-list card-good__form-radio-list">
+                      <div class="form-radio-list__row">
+                        <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-height" class="form-radio__input" value="176">
+                            <span class="form-radio__text">176</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                          <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-height" class="form-radio__input" checked value="176">
+                            <span class="form-radio__text">176</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                        <div class="form-radio-list__item">
+                          <label class="form-radio">
+                            <input type="checkbox" name="card-good-height" class="form-radio__input" value="176">
+                            <span class="form-radio__text">176</span>
+                            <span class="form-radio__icon"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-good__help-size">
+                      <a href="#">Определить свой размер</a>
+                      <br><a href="#modal-1" data-fancybox>modal 1</a>
+                      <br><a href="#modal-2" data-fancybox>modal 2</a>
+                      <br><a href="#modal-3" data-fancybox>modal 3</a>
+                      <br><a href="#modal-4" data-fancybox>modal 4</a>
+                    </div>
+                    <a href="#" class="btn btn--theme-gray btn--size-md card-good__btn">Записаться на примерку</a>
+                    <a href="#" class="btn btn--theme-simple btn--size-md card-good__btn">В корзину</a>
+                  </div>
+                  <div class="card-good__subtitle">Наличие в магазинах:</div>
+                  <ul class="card-stock card-good__stock">
+                    <li>Модер в ТРК “Мегамаг”<br>г. Ростов-на-Дону, ул. Пойменная 1, 2-ой этаж <img src="./images/card-stock-icon-1.svg"></li>
+                    <li>Модер на Темерницкой<br>г. Ростов-на-Дону, Пр. Ворошиловский, 31 <img src="./images/card-stock-icon-1.svg"></li>
+                    <li>Магазин “Мармелад”<br>г. Таганрог, пл. Мира 7, 1 этаж <img src="./images/card-stock-icon-1.svg"></li>
+                    <li>Магазин “Бон-Пассаж”<br>г. Новороссийск, Анапское ш., д. 39А, 2-ой этаж <img src="./images/card-stock-icon-1.svg"></li>
+                  </ul>
+                  <div class="content card-good__text">
+                    <p>Классический костюмный пиджак "Прованс" представлен в трех силуэтах: SLIM FIT, REGULAR FIT и COMFORT FIT . Модель выполнена из поливискозной ткани синего цвета с эффектным рисунком клетка.<br>Пиджак с застежкой на две пуговицы, лацканами, боковыми карманами с клапанами и нагрудным карманом листочка. Спинка в моделях силуэта SLIM и REGULAR с двумя шлицами, а в моделях COMFORN c одной шлицей.<br>Эта модель пиджака отличный повседневный вариант для классического дресс-кода в сочетании с брюками «Прованс», светлой сорочкой и галстуком. А в сочетании с жилетом «Прованс» и галстуком-бабочка станет хорошим вариантом для свадьбы или выпускного.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- style BEGIN -->
+            <section class="section section--style">
+              <h2 class="title-size-4 section__title">Выбери свой образ</h2>
+              <div class="goods-list">
+                <div class="row goods-list__row">
+                  <div class="col-4 goods-list__col">
+                    <div class="goods-card goods-list__card">
+                      <div class="goods-card__header">
+                        <div class="goods-card__picture">
+                          <img src="./images/goods-card-1.jpg" alt="" class="img-cover">
+                        </div>
+                        <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#favorite"></use>
+                          </svg>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <h3 class="goods-card__name">
+                        <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                      </h3>
+                      <div class="price-list goods-card__price">
+                        <div class="price-list__row">
+                          <div class="price-good price-good--new price-list__price-item">4 000 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 goods-list__col">
+                    <div class="goods-card goods-list__card">
+                      <div class="goods-card__header">
+                        <div class="goods-card__picture">
+                          <img src="./images/goods-card-2.jpg" alt="" class="img-cover">
+                        </div>
+                        <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#favorite"></use>
+                          </svg>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <h3 class="goods-card__name">
+                        <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                      </h3>
+                      <div class="price-list goods-card__price">
+                        <div class="price-list__row">
+                          <div class="price-good price-good--new price-list__price-item">2 550 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 goods-list__col">
+                    <div class="goods-card goods-list__card">
+                      <div class="goods-card__header">
+                        <div class="goods-card__picture">
+                          <img src="./images/goods-card-1.jpg" alt="" class="img-cover">
+                        </div>
+                        <button type="button" class="js-goods-card-favorite-toggle favorite-btn goods-card__favorite">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#favorite"></use>
+                          </svg>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#favorite-fill"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <h3 class="goods-card__name">
+                        <a href="#" class="goods-card__link">Поло из плотного хлопка</a>
+                      </h3>
+                      <div class="price-list goods-card__price">
+                        <div class="price-list__row">
+                          <div class="price-good price-good--new price-list__price-item">1 550 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- style END -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- layout END -->
+    <!-- footer BEGIN -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__col footer__col--contacts">
+          <div class="footer__contacts">г. Ростов-на-Дону<br>Ул. Темерницкая, 80<br><a href="tel:+88004446016">8 (800) 444-60-16</a></div>
+        </div>
+        <div class="footer__col footer__col--nav">
+          <ul class="footer-nav-list footer__nav">
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Компания</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Ателье</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">ОПТ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--nav">
+          <ul class="footer-nav-list footer__nav">
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Покупателям</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Магазины</a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--subscribe">
+          <form action="#" class="subscribe-form footer__subscribe-form">
+            <div class="title-size-4 subscribe-form__title">Подписаться на рассылку</div>
+            <div class="subscribe-form__group">
+              <input type="text" name="subscribe" class="input-form subscribe-form__input" value="">
+              <input type="submit" class="btn subscribe-form__btn" value="Подписаться">
+            </div>
+          </form>
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-instagram.png">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-vk.png">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-facebook.png">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.google.com/" target="_blank" class="social__link">
+                <img src="./images/social-icon-ok.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer END -->
+  </div>
+</div>
+<!-- site END -->
+
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
