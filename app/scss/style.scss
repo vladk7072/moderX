@@ -1450,14 +1450,15 @@ time {
 }
 
 .style-nav__slide {
-  padding: 0 10px;
-  display: inline-block;
+  display: inline;
   vertical-align: top;
+  max-width: 250px;
 }
 
 .style-nav__btn {
   background: transparent;
-  padding: 12px 48px;
+  text-align: center;
+  padding: 12px 5px;
   display: block;
   font-weight: normal;
   font-size: 30px;
@@ -1466,18 +1467,10 @@ time {
   color: #838383;
   text-align: center;
   border: 1px solid #838383;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   border-radius: 30px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   cursor: pointer;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -2744,25 +2737,34 @@ time {
 }
 .uncos {
   padding: 16px 0 81px;
-  &__mob-img{
+  &__mob-img {
     display: none;
     margin: 20px 0;
-    &-first{
+    &-first {
       margin-top: 0;
     }
   }
-  &__image{
+  &__image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     height: 672px;
     // padding: 110px 0 206px;
+    &-mob {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      height: 672px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: none;
+    }
   }
   &__bg-title {
     font-family: "CoFo Kak";
     font-size: 168px;
-    line-height: 172px;
+    line-height: 138px;
     color: #fff;
     margin-top: auto;
     transform: translateY(-70px);
@@ -2775,90 +2777,90 @@ time {
     font-size: 87px;
     line-height: 92px;
     color: #fff;
-    margin-top: -108px;
+    margin-top: -92px;
     margin-bottom: auto;
     max-width: 480px;
     width: 100%;
     transform: translateY(-70px);
+    margin-right: 15px;
   }
-  &__title{
-    font-family: 'CoFo Kak';
+  &__title {
+    font-family: "CoFo Kak";
     font-weight: 400;
     font-size: 71px;
     line-height: 74px;
     margin-top: 30px;
   }
-  &__data{
+  &__data {
     margin: 25px 0;
     color: #838383;
-    font-family: 'Noto Sans';
+    font-family: "Noto Sans";
     font-weight: 400;
-
   }
-  &__item{
+  &__item {
     display: flex;
     justify-content: space-between;
   }
-  &__picture{
+  &__picture {
     width: 100%;
     margin-right: 71px;
-    &-reverse{
+    &-reverse {
       margin: 0 0 0 71px;
-      img{
+      img {
         margin-left: auto;
       }
     }
   }
-  &__text{
-    font-family: 'Noto Sans';
+  &__text {
+    font-family: "Noto Sans";
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #838383;
-    & + .uncos__text{
+    & + .uncos__text {
       margin-top: 10px;
     }
   }
 }
-.promotion{
+.promotion {
   padding-bottom: 73px;
-  &__items{
+  &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 62px 68px;
   }
-  &__title{
+  &__title {
     margin: 62px 0;
-    font-family: 'CoFo Kak';
+    font-family: "CoFo Kak";
     font-weight: 400;
     font-size: 71px;
     line-height: 71px;
   }
-  &__data{
-    font-family: 'Noto Sans';
+  &__data {
+    font-family: "Noto Sans";
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #838383;
     margin-top: 17px;
   }
-  &__item-title{
+  &__item-title {
     margin-top: 5px;
-    font-family: 'Noto Sans';
+    font-family: "Noto Sans";
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #585858;
   }
-  &__item-text{
+  &__item-text {
     padding: 17px 0;
-    font-family: 'Noto Sans';
+    font-family: "Noto Sans";
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #838383;
   }
-  &__item-link{
+  &__item-link {
     display: inline-block;
     text-align: center;
     background-color: #838383;
@@ -2866,10 +2868,55 @@ time {
     max-width: 368px;
     width: 100%;
     padding: 8px 5px;
-    font-family: 'CoFo Sans';
+    font-family: "CoFo Sans";
     font-weight: 400;
     font-size: 24px;
     line-height: 26px;
+  }
+}
+.promo {
+  &__top {
+    margin: 15px 0 44px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+  &__title,
+  &__text {
+    font-family: "CoFo Kak";
+    font-weight: 400;
+    color: #454545;
+  }
+  &__title {
+    font-size: 94px;
+    line-height: 80px;
+    &-sub {
+      margin-top: 15px;
+    }
+  }
+  &__text {
+    font-size: 44px;
+    line-height: 40px;
+    max-width: 220px;
+    width: 100%;
+    margin-left: 6px;
+    &-sub {
+      margin-top: 15px;
+    }
+  }
+}
+.tags {
+  &__sect{
+    margin-bottom: 70px;
+  }
+  &__promo-btn {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5px;
+  }
+  &__promo-slide{
+    max-width: 150px;
   }
 }
 

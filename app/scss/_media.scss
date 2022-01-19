@@ -11,20 +11,20 @@
     max-width: 50%;
     flex-basis: 50%;
   }
-  .uncos{
-    &__image{
+  .uncos {
+    &__image {
       height: 500px;
     }
     &__bg-title {
       font-size: 128px;
-      line-height: 130px;
+      line-height: 112px;
       max-width: 550px;
       margin-right: 24px;
     }
     &__bg-text {
       font-size: 67px;
       line-height: 69px;
-      margin-top: -108px;
+      margin-top: -96px;
       max-width: 370px;
       transform: translateY(-44px);
     }
@@ -109,14 +109,14 @@
       grid-gap: 87px 58px;
     }
   }
-  .uncos{
-    &__text{
+  .uncos {
+    &__text {
       font-size: 16px;
       line-height: 21px;
     }
-    &__picture{
+    &__picture {
       margin-right: 30px;
-      &-reverse{
+      &-reverse {
         margin: 0 0 0 30px;
       }
     }
@@ -175,19 +175,19 @@
   .layout__header-breadcrumbs {
     font-size: 14px;
   }
-  .news{
-    &__picture{
+  .news {
+    &__picture {
       margin-right: 44px;
     }
   }
-  .promotion{
-    &__items{
+  .promotion {
+    &__items {
       grid-gap: 53px 43px;
     }
-    &__item-text{
+    &__item-text {
       font-size: 16px;
     }
-    &__item-link{
+    &__item-link {
       font-size: 22px;
     }
   }
@@ -419,38 +419,38 @@
       font-size: 43px;
       line-height: 45px;
     }
-    &__picture{
+    &__picture {
       margin: 0 0 20px 0;
     }
-    &__item-wrapper{
+    &__item-wrapper {
       max-width: 344px;
     }
-    &__item{
+    &__item {
       flex-direction: column;
-      & + .news__item{
+      & + .news__item {
         margin-top: 20px;
       }
     }
-    &__item-box{
+    &__item-box {
       flex-direction: column;
       align-items: start;
     }
-    &__item-data{
+    &__item-data {
       font-size: 12px;
       line-height: 16px;
       margin-left: 0;
     }
-    &__item-title{
+    &__item-title {
       font-size: 17px;
       line-height: 24px;
       order: 1;
     }
-    &__item-text{
+    &__item-text {
       margin: 9px 0 0 0;
       font-size: 15px;
       line-height: 22px;
     }
-    &__item-link{
+    &__item-link {
       font-size: 12px;
       line-height: 24px;
       background-color: transparent;
@@ -458,77 +458,84 @@
       text-align: left;
     }
   }
-  .uncos{
+  .uncos {
     padding: 20px 0 39px;
-    &__mob-img{
+    &__mob-img {
       display: block;
     }
-    &__image{
+    &__image {
       display: none;
     }
-    &__title{
+    &__image-mob {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 22px 0 0 31px;
+      background-size: cover;
+    }
+    &__title {
       margin: 0;
       font-size: 43px;
       line-height: 45px;
     }
-    &__data{
+    &__data {
       margin: 10px 0;
       font-size: 12px;
       line-height: 16px;
     }
-    &__picture{
+    &__picture {
       margin: 0 0 15px;
-      img{
+      img {
         margin: 0 auto;
       }
-      &-reverse{
+      &-reverse {
         order: -1;
       }
     }
-    &__item{
+    &__item {
       flex-direction: column;
       justify-content: center;
       max-width: 344px;
       width: 100%;
       margin: 0 auto;
     }
-    &__text{
+    &__text {
       font-size: 15px;
       line-height: 22px;
-      & + .uncos__text{
+      & + .uncos__text {
         margin-top: 9px;
       }
     }
   }
-  .promotion{
+  .promotion {
     padding-bottom: 44px;
-    &__title{
+    &__title {
       margin: 20px 0;
       font-size: 43px;
       line-height: 45px;
     }
-    &__picture{
+    &__picture {
       display: flex;
       flex-direction: column;
     }
-    &__data{
+    &__data {
       order: -1;
       margin: 0 0 6px;
     }
-    &__items{
+    &__items {
       grid-template-columns: repeat(1, 1fr);
       max-width: 344px;
       width: 100%;
       margin: 0 auto;
       grid-gap: 20px;
     }
-    &__item-title{
+    &__item-title {
       margin-top: 10px;
     }
-    &__item-text{
+    &__item-text {
       display: none;
     }
-    &__item-link{
+    &__item-link {
       font-size: 12px;
       line-height: 16px;
       color: #585858;
@@ -614,6 +621,23 @@
     }
     &__link {
       display: none;
+    }
+  }
+}
+@media (max-width: 370px) {
+  .uncos {
+    &__image-mob {
+      padding: 15px 0 0 15px;
+    }
+  }
+  .promo {
+    &__title {
+      font-size: 86px;
+      line-height: 71px;
+    }
+    &__text {
+      font-size: 40px;
+      line-height: 31px;
     }
   }
 }
