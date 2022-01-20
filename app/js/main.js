@@ -176,13 +176,34 @@ $(document).ready(function () {
     return false;
   });
 
-  const tagsSlider = new Swiper(".tags-slider",{
+  const tagsSlider = new Swiper(".tags-slider", {
     slidesPerView: "auto",
     spaceBetween: 20,
-    freeMode: true
+    freeMode: true,
   });
 
   $(".style-nav__btn").click(function () {
     $(this).toggleClass("is-active");
   });
+
+  $(".view__slider").slick({
+    arrows: false,
+    dots: true,
+    speed: 600,
+    slidesToShow: 1,
+    infinite: true,
+  });
+
+  $(".view__slider-modal").slick({
+    arrows: false,
+    dots: true,
+    speed: 600,
+    slidesToShow: 1,
+    infinite: true
+  });
+
+  $(".view__size-btn").click(function () {
+    $(this).toggleClass("view__size-btn--active");
+  });
+
 });
