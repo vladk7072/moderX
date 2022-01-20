@@ -1931,20 +1931,8 @@ time {
 
 .layout__header {
   padding: 10px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid #a9a9a9;
 }
@@ -2564,6 +2552,9 @@ time {
   &__title {
     font-size: 71px;
     line-height: 80px;
+    &-up {
+      text-transform: uppercase;
+    }
   }
   &__address {
     margin: 23px 0 12px;
@@ -3035,5 +3026,137 @@ time {
     color: #585858;
   }
 }
+.contacts {
+  padding: 40px 0 65px;
+  .shops__address {
+    color: #838383;
+  }
+  .shops__link-tel {
+    color: #838383;
+    &--mail {
+      color: #585858;
+    }
+  }
+  .shops__times--dark {
+    color: #585858;
+    margin-bottom: 12px;
+  }
+  .shops__address {
+    margin: 0 0 12px;
+  }
+  .shops__map {
+    margin-top: 84px;
+  }
+  &__box {
+    display: flex;
+    margin: 55px auto 0;
+    align-items: center;
+    max-width: 880px;
+    width: 100%;
+  }
+  &__box-btn {
+    max-width: 368px;
+    width: 100%;
+  }
+  .btn-last {
+    margin-left: auto;
+  }
+}
+.modal-6 {
+  &__title {
+    margin-bottom: 30px;
+    font-family: "CoFo Kak";
+    font-weight: 400;
+    font-size: 71px;
+    line-height: 40px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    border: 1px solid #838383;
+    padding: 12px;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #585858;
+    &::placeholder {
+      color: #9d9d9d;
+    }
+  }
+  &__input + .modal-6__input {
+    margin-top: 24px;
+  }
+  &__textarea {
+    margin-top: 24px;
+    border: 1px solid #838383;
+    padding: 12px;
+    resize: none;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #585858;
+    min-height: 193px;
+    &::placeholder {
+      color: #9d9d9d;
+    }
+  }
+  &__text {
+    margin: 24px 0;
+  }
+}
+.stars {
+  padding: 74px 0 95px;
+  .btn{
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-family: "CoFo Kak";
+    font-weight: 400;
+    font-size: 71px;
+    line-height: 74px;
+    margin-bottom: 34px;
+    color: #585858;
+  }
+  &__item{
+    & + .stars__item{
+      margin-top: 34px;
+    }
+  }
+  &__item-title{
+    margin-bottom: 13px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #585858;
+    span{
+      font-size: 18px;
+      color: #838383;
+    }
+  }
+  &__item-text{
+    margin-top: 12px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &__stars{
+    display: flex;
+    align-items: center;
+  }
+  &__stars-point{
+    width: 20px;
+    cursor: pointer;
+    & + .stars__stars-point{
+      margin-left: 4px;
+    }
+  }
+}
+
 
 @import "media";

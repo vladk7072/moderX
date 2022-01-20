@@ -1,168 +1,333 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
-<title>Moder</title>
-<link href="css/style.min.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+  <title>Moder | Contacts</title>
+  <link href="css/style.min.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- site BEGIN -->
-<div id="site">
-  <div id="site-wrapper">
-    <!-- header BEGIN -->
-    <header class="header">
-      <div class="header__inner">
-        <a href="/" class="logo header__logo">
-          <img src="./images/logo.svg" class="logo__img" alt="Moder">
+  <!-- site BEGIN -->
+  <div id="site">
+    <div id="site-wrapper">
+
+      <div id="modal-6" class="is-hidden modal modal--size-md modal-6">
+        <div class="modal__inner">
+          <div class="modal-card">
+            <div class="modal-card__content">
+              <div class="modal-6">
+                <h4 class="modal-6__title">
+                  форма обратной связи
+                </h4>
+                <form class="modal-6__form" action="#">
+                  <input class="modal-6__input" type="text"
+                  placeholder="Имя">
+                  <input class="modal-6__input" type="text" placeholder="Телефон">
+                  <input class="modal-6__input" type="text" placeholder="E-mail">
+                  <textarea class="modal-6__textarea" placeholder="Ваше сообщение"></textarea>
+                </form>
+                <p class="modal-6__text">
+                  Нажимая кнопку “Отправить”, вы подтверждаете свое согласие на обработку своих персональных данных.
+                </p>
+                <a href="#" class="btn btn--theme-gray btn--size-md contacts__box-btn">
+                  Отправить
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header BEGIN -->
+      <header class="header">
+        <div class="header__inner">
+          <a href="/" class="logo header__logo">
+            <img src="./images/logo.svg" class="logo__img" alt="Moder">
+          </a>
+          <div class="header__dropdown">
+            <nav class="nav header__nav" role="navigation">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Каталог</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Магазины</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Ателье</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Сотрудничество</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="btn-actions-group header__actions">
+              <a href="#" class="btn-action btn-action--basket btn-actions-group__btn">
+                <svg class="btn-action__icon">
+                  <use xlink:href="./images/sprite.svg#basket"></use>
+                </svg>
+              </a>
+              <a href="#" class="btn-action btn-action--favorite btn-actions-group__btn">
+                <svg class="btn-action__icon">
+                  <use xlink:href="./images/sprite.svg#favorite"></use>
+                </svg>
+              </a>
+              <a href="#" class="btn-action btn-action--search btn-actions-group__btn">
+                <svg class="btn-action__icon">
+                  <use xlink:href="./images/sprite.svg#search"></use>
+                </svg>
+              </a>
+            </div>
+            <a href="tel:+88004446016" class="phone-link header__phone-link">8 (800) 444-60-16</a>
+          </div>
+          <button type="button" class="js-header-dropdown-toggle toggle header__toggle">
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+            <span class="toggle__line"></span>
+          </button>
+        </div>
+      </header>
+      <!-- header END -->
+      <!-- action-mobile BEGIN -->
+      <div class="action-mobile">
+        <a href="#" class="btn-action btn-action--phone action-mobile__btn">
+          <svg class="btn-action__icon">
+            <use xlink:href="./images/sprite.svg#favorite"></use>
+          </svg>
         </a>
-        <div class="header__dropdown">
-          <nav class="nav header__nav" role="navigation">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Каталог</a>
+        <a href="#" class="btn-action btn-action--favorite action-mobile__btn">
+          <svg class="btn-action__icon">
+            <use xlink:href="./images/sprite.svg#favorite"></use>
+          </svg>
+        </a>
+        <a href="#" class="btn-action btn-action--basket action-mobile__btn">
+          <svg class="btn-action__icon">
+            <use xlink:href="./images/sprite.svg#basket"></use>
+          </svg>
+        </a>
+        <a href="#" class="btn-action btn-action--user action-mobile__btn">
+          <svg class="btn-action__icon">
+            <use xlink:href="./images/sprite.svg#favorite"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- action-mobile END -->
+
+      <section class="contacts">
+        <div class="shops__content container-1">
+          <div class="shops__content-item">
+            <div class="shops__content-box">
+              <h4 class="shops__title  shops__title--up">
+                КОНТАКТЫ ОФИСА MODER
+              </h4>
+              <p class="shops__times shops__times--dark">
+                ООО «Текстиль-маркет»
+              </p>
+              <address class="shops__address">
+                344002, г. Ростов-на-Дону, ул.Темерницкая, 80
+              </address>
+              <p class="shops__times">
+                ОГРН 1026103734128, свид.61 № 007066347 от 26.08.2010
+              </p>
+              <a href="tel:+88004446016" class="shops__link-tel shops__link-tel--mail">
+                8 800 444 60 16
+              </a>
+            </div>
+          </div>
+          <div class="shops__content-item">
+            <div class="shops__content-box">
+              <h4 class="shops__title">
+                Отдел розничных продаж
+              </h4>
+              <address class="shops__address">
+                г. Ростов-на-Дону, ул. Темерницкая, 80
+              </address>
+              <a href="tel:+78632620787" class="shops__link-tel">
+                +7 (863) 262-07-87
+              </a>
+              <p class="shops__times">
+                Часы работы: пн-пт, 9:00-18:00 (по мск)
+              </p>
+              <a href="mailto:magazin@moder.ru" class="shops__link-tel shops__link-tel--mail">
+                magazin@moder.ru
+              </a>
+            </div>
+          </div>
+          <div class="shops__content-item">
+            <div class="shops__content-box">
+              <h4 class="shops__title">
+                Отдел оптовых продаж
+              </h4>
+              <address class="shops__address">
+                г. Ростов-на-Дону, ул. Темерницкая, 80
+              </address>
+              <a href="tel:+78632620787" class="shops__link-tel">
+                +7 (863) 262-07-87
+              </a>
+              <p class="shops__times">
+                Часы работы: пн-пт, 9:00-18:00 (по мск)
+              </p>
+              <a href="mailto:magazin@moder.ru" class="shops__link-tel shops__link-tel--mail">
+                magazin@moder.ru
+              </a>
+            </div>
+          </div>
+          <div class="shops__content-item">
+            <div class="shops__content-box">
+              <h4 class="shops__title">
+                Ателье MODER
+              </h4>
+              <address class="shops__address">
+                г. Ростов-на-Дону, ул. Темерницкая, 80
+              </address>
+              <a href="tel:+78632620787" class="shops__link-tel">
+                +7 (863) 262-07-87
+              </a>
+              <p class="shops__times">
+                Часы работы: пн-пт, 9:00-18:00 (по мск)
+              </p>
+              <a href="mailto:magazin@moder.ru" class="shops__link-tel shops__link-tel--mail">
+                magazin@moder.ru
+              </a>
+            </div>
+          </div>
+          <div class="shops__content-item">
+            <div class="shops__content-box">
+              <h4 class="shops__title">
+                Отдел кадров
+              </h4>
+              <address class="shops__address">
+                г. Ростов-на-Дону, ул. Темерницкая, 80
+              </address>
+              <a href="tel:+78632620787" class="shops__link-tel">
+                +7 (863) 262-07-87
+              </a>
+              <p class="shops__times">
+                Часы работы: пн-пт, 9:00-18:00 (по мск)
+              </p>
+              <a href="mailto:magazin@moder.ru" class="shops__link-tel shops__link-tel--mail">
+                magazin@moder.ru
+              </a>
+            </div>
+          </div>
+          <div class="shops__content-item">
+            <div class="shops__content-box">
+              <h4 class="shops__title">
+                Отдел рекламы
+              </h4>
+              <address class="shops__address">
+                г. Ростов-на-Дону, ул. Темерницкая, 80
+              </address>
+              <a href="tel:+78632620787" class="shops__link-tel">
+                +7 (863) 262-07-87
+              </a>
+              <p class="shops__times">
+                Часы работы: пн-пт, 9:00-18:00 (по мск)
+              </p>
+              <a href="mailto:magazin@moder.ru" class="shops__link-tel shops__link-tel--mail">
+                magazin@moder.ru
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts__box">
+          <a href="#" class="btn btn--theme-gray btn--size-md contacts__box-btn">
+            Обратная связь
+          </a>
+          <a href="#modal-6" data-fancybox class="btn btn--theme-simple btn--size-md btn-last contacts__box-btn">
+            Оставить отзыв
+          </a>
+        </div>
+
+        <div class="shops__map">
+          <picture class="shops__picture">
+            <source media="(max-width: 767px)" srcset="images/map-mob.jpg">
+            <img src="images/map-desc.jpg" alt="">
+          </picture>
+        </div>
+      </section>
+
+      <!-- style END -->
+      <!-- footer BEGIN -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--contacts">
+            <div class="footer__contacts">г. Ростов-на-Дону<br>Ул. Темерницкая, 80<br><a href="tel:+88004446016">8 (800)
+                444-60-16</a></div>
+          </div>
+          <div class="footer__col footer__col--nav">
+            <ul class="footer-nav-list footer__nav">
+              <li class="footer-nav-list__item">
+                <a href="#" class="footer-nav-list__link">Компания</a>
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Магазины</a>
+              <li class="footer-nav-list__item">
+                <a href="#" class="footer-nav-list__link">Ателье</a>
               </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Ателье</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Сотрудничество</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Контакты</a>
+              <li class="footer-nav-list__item">
+                <a href="#" class="footer-nav-list__link">ОПТ</a>
               </li>
             </ul>
-          </nav>
-          <div class="btn-actions-group header__actions">
-            <a href="#" class="btn-action btn-action--basket btn-actions-group__btn">
-              <svg class="btn-action__icon">
-                <use xlink:href="./images/sprite.svg#basket"></use>
-              </svg>
-            </a>
-            <a href="#" class="btn-action btn-action--favorite btn-actions-group__btn">
-              <svg class="btn-action__icon">
-                <use xlink:href="./images/sprite.svg#favorite"></use>
-              </svg>
-            </a>
-            <a href="#" class="btn-action btn-action--search btn-actions-group__btn">
-              <svg class="btn-action__icon">
-                <use xlink:href="./images/sprite.svg#search"></use>
-              </svg>
-            </a>
           </div>
-          <a href="tel:+88004446016" class="phone-link header__phone-link">8 (800) 444-60-16</a>
+          <div class="footer__col footer__col--nav">
+            <ul class="footer-nav-list footer__nav">
+              <li class="footer-nav-list__item">
+                <a href="#" class="footer-nav-list__link">Покупателям</a>
+              </li>
+              <li class="footer-nav-list__item">
+                <a href="#" class="footer-nav-list__link">Магазины</a>
+              </li>
+              <li class="footer-nav-list__item">
+                <a href="#" class="footer-nav-list__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--subscribe">
+            <form action="#" class="subscribe-form footer__subscribe-form">
+              <div class="title-size-4 subscribe-form__title">Подписаться на рассылку</div>
+              <div class="subscribe-form__group">
+                <input type="text" name="subscribe" class="input-form subscribe-form__input" value="">
+                <input type="submit" class="btn subscribe-form__btn" value="Подписаться">
+              </div>
+            </form>
+            <ul class="social footer__social">
+              <li class="social__item">
+                <a href="https://www.google.com/" target="_blank" class="social__link">
+                  <img src="./images/social-icon-instagram.png">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.google.com/" target="_blank" class="social__link">
+                  <img src="./images/social-icon-vk.png">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.google.com/" target="_blank" class="social__link">
+                  <img src="./images/social-icon-facebook.png">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.google.com/" target="_blank" class="social__link">
+                  <img src="./images/social-icon-ok.png">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button type="button" class="js-header-dropdown-toggle toggle header__toggle">
-          <span class="toggle__line"></span>
-          <span class="toggle__line"></span>
-          <span class="toggle__line"></span>
-        </button>
-      </div>
-    </header>
-    <!-- header END -->
-    <!-- action-mobile BEGIN -->
-    <div class="action-mobile">
-      <a href="#" class="btn-action btn-action--phone action-mobile__btn">
-        <svg class="btn-action__icon">
-          <use xlink:href="./images/sprite.svg#favorite"></use>
-        </svg>
-      </a>
-      <a href="#" class="btn-action btn-action--favorite action-mobile__btn">
-        <svg class="btn-action__icon">
-          <use xlink:href="./images/sprite.svg#favorite"></use>
-        </svg>
-      </a>
-      <a href="#" class="btn-action btn-action--basket action-mobile__btn">
-        <svg class="btn-action__icon">
-          <use xlink:href="./images/sprite.svg#basket"></use>
-        </svg>
-      </a>
-      <a href="#" class="btn-action btn-action--user action-mobile__btn">
-        <svg class="btn-action__icon">
-          <use xlink:href="./images/sprite.svg#favorite"></use>
-        </svg>
-      </a>
+      </footer>
+      <!-- footer END -->
     </div>
-    <!-- action-mobile END -->
-    
-    
-    
-    <!-- style END -->
-    <!-- footer BEGIN -->
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__col footer__col--contacts">
-          <div class="footer__contacts">г. Ростов-на-Дону<br>Ул. Темерницкая, 80<br><a href="tel:+88004446016">8 (800) 444-60-16</a></div>
-        </div>
-        <div class="footer__col footer__col--nav">
-          <ul class="footer-nav-list footer__nav">
-            <li class="footer-nav-list__item">
-              <a href="#" class="footer-nav-list__link">Компания</a>
-            </li>
-            <li class="footer-nav-list__item">
-              <a href="#" class="footer-nav-list__link">Ателье</a>
-            </li>
-            <li class="footer-nav-list__item">
-              <a href="#" class="footer-nav-list__link">ОПТ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col footer__col--nav">
-          <ul class="footer-nav-list footer__nav">
-            <li class="footer-nav-list__item">
-              <a href="#" class="footer-nav-list__link">Покупателям</a>
-            </li>
-            <li class="footer-nav-list__item">
-              <a href="#" class="footer-nav-list__link">Магазины</a>
-            </li>
-            <li class="footer-nav-list__item">
-              <a href="#" class="footer-nav-list__link">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col footer__col--subscribe">
-          <form action="#" class="subscribe-form footer__subscribe-form">
-            <div class="title-size-4 subscribe-form__title">Подписаться на рассылку</div>
-            <div class="subscribe-form__group">
-              <input type="text" name="subscribe" class="input-form subscribe-form__input" value="">
-              <input type="submit" class="btn subscribe-form__btn" value="Подписаться">
-            </div>
-          </form>
-          <ul class="social footer__social">
-            <li class="social__item">
-              <a href="https://www.google.com/" target="_blank" class="social__link">
-                <img src="./images/social-icon-instagram.png">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.google.com/" target="_blank" class="social__link">
-                <img src="./images/social-icon-vk.png">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.google.com/" target="_blank" class="social__link">
-                <img src="./images/social-icon-facebook.png">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.google.com/" target="_blank" class="social__link">
-                <img src="./images/social-icon-ok.png">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <!-- footer END -->
   </div>
-</div>
-<!-- site END -->
+  <!-- site END -->
 
-<script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 
 </body>
+
 </html>

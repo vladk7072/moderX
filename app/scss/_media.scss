@@ -274,7 +274,7 @@
       width: 100%;
       height: 155px;
     }
-    &__item-box-art{
+    &__item-box-art {
       display: block;
     }
   }
@@ -291,8 +291,19 @@
       color: #585858;
     }
   }
+  .contacts {
+    &__box {
+      flex-direction: column;
+    }
+    .btn-last {
+      margin: 24px 0 0;
+    }
+  }
 }
 @media (max-width: 767px) {
+  .breadcrumbs{
+    display: none;
+  }
   h1,
   .title-size-1 {
     font-size: 94px;
@@ -657,6 +668,22 @@
       height: 136px;
     }
   }
+  .modal-6{
+    .carousel__button.is-close {
+      position: absolute;
+      top: 11px;
+      right: 11px;
+      color: #585858;
+    }
+    &__title{
+      font-size: 44px;
+      line-height: 40px;
+      margin-bottom: 19px;
+    }
+    &__text{
+      margin: 12px 0;
+    }
+  }
 }
 @media (max-width: 575px) {
   .intro-slider-container__subtitle {
@@ -736,39 +763,83 @@
       display: none;
     }
   }
-  .modal-5{
-    &__none{
+  .modal-5 {
+    &__none {
       display: block;
     }
-    &__none-2{
+    &__none-2 {
       display: none;
     }
-    .price-good--old{
+    .price-good--old {
       display: none;
     }
-    .card-good__title{
+    .card-good__title {
       max-width: 230px;
       width: 100%;
       font-size: 17px;
       line-height: 24px;
     }
-    .price-good--new{
+    .price-good--new {
       font-size: 17px;
       line-height: 24px;
       margin: 0;
     }
   }
-  .view{
-    &__item-box-art{
+  .view {
+    &__item-box-art {
       margin-top: -30px;
     }
   }
+  .contacts {
+    .shops__address {
+      margin: 3px 0;
+    }
+    .shops__link-tel {
+      margin: 0;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .shops__times {
+      margin: 3px 0;
+    }
+    .shops__title {
+      margin-bottom: 7px;
+    }
+    .shops__content {
+      grid-gap: 22px;
+    }
+  }
+  .stars{
+    padding: 41px 0 57px;
+    .btn{
+      margin-bottom: 20px;
+    }
+    &__title{
+      font-size: 43px;
+      line-height: 46px;
+      margin-bottom: 6px;
+    }
+    &__text{
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 10px;
+      span{
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    &__item{
+      & + .stars__item{
+        margin-top: 30px;
+      }
+    }
+  }
 }
-@media(max-width: 440px){
-  .modal-5{
+@media (max-width: 440px) {
+  .modal-5 {
     max-width: 290px;
     width: 100%;
-    .card-good__title{
+    .card-good__title {
       max-width: 195px;
     }
   }
@@ -786,6 +857,12 @@
     }
     &__item-img {
       margin-right: 10px;
+    }
+  }
+  .modal-6{
+    &__text{
+      font-size: 8px;
+      line-height: 12px;
     }
   }
 }

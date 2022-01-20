@@ -206,4 +206,17 @@ $(document).ready(function () {
     $(this).toggleClass("view__size-btn--active");
   });
 
+  $(".stars__stars").rateYo({
+    rating: 4,
+    starWidth: "20px",
+    spacing: "4px",
+    ratedFill: "#E74C3C"
+                
+  });
 });
+
+
+
+
+    
+   
